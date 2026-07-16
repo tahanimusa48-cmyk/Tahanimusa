@@ -185,3 +185,42 @@ function changeToArabicContact() {
 
     document.body.dir = "rtl";
 }
+function changeToEnglishLogin(){
+
+document.documentElement.lang="en";
+document.documentElement.dir="ltr";
+
+document.getElementById("clinicTitle").innerHTML="Al-Shifa Clinic";
+document.getElementById("loginTitle").innerHTML="Login";
+
+document.getElementById("emailLabel").innerHTML="Email";
+document.getElementById("passwordLabel").innerHTML="Password";
+
+document.getElementById("email").placeholder="Enter your email";
+document.getElementById("password").placeholder="Enter your password";
+
+document.getElementById("loginBtn").innerHTML="Login";
+
+document.getElementById("registerText").innerHTML='Don\'t have an account? <a href="register.html">Create Account</a>';
+
+}
+
+function changeToArabicLogin(){
+
+document.documentElement.lang="ar";
+document.documentElement.dir="rtl";
+
+document.getElementById("clinicTitle").innerHTML="عيادة الشفاء";
+document.getElementById("loginTitle").innerHTML="تسجيل الدخول";
+
+document.getElementById("emailLabel").innerHTML="البريد الإلكتروني";
+document.getElementById("passwordLabel").innerHTML="كلمة المرور";
+
+document.getElementById("email").placeholder="أدخل البريد الإلكتروني";
+document.getElementById("password").placeholder="أدخل كلمة المرور";
+
+document.getElementById("loginBtn").innerHTML="تسجيل الدخول";
+
+document.getElementById("registerText").innerHTML='ليس لديك حساب؟ <a href="register.html">إنشاء حساب</a>';
+
+}
