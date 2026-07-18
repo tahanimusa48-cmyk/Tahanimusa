@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h1 id="contactPageTitle">تواصل معنا</h1>
+
+    <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="doctors.html">الأطباء</a>
+        <a href="booking.html">حجز موعد</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+
+</header>
+
+<div class="language-buttons">
+    <button onclick="changeToArabicContact()">العربية</button>
+    <button onclick="changeToEnglishContact()">English</button>
+</div>
+
+<section class="home">
+
+    <h2 id="contactTitle">أرسل رسالة</h2>
+
+    <form>
+
+        <label id="contactNameLabel">الاسم الكامل</label><br>
+        <input type="text"><br><br>
+
+        <label id="emailLabel">البريد الإلكتروني</label><br>
+        <input type="email"><br><br>
+
+        <label id="messageLabel">الرسالة</label><br>
+        <textarea rows="5"></textarea><br><br>
+
+        <button type="submit" id="sendBtn">إرسال</button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
