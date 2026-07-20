@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - عيادة الشفاء</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="login-page">
+
+<div class="login-box">
+    <!-- أزرار تغيير اللغة لصفحة تسجيل الدخول -->
+    <div class="language">
+        <button onclick="changeToArabicLogin()">العربية</button>
+        <button onclick="changeToEnglishLogin()">English</button>
+    </div>
+
+    <h1 id="loginClinicTitle">عيادة الشفاء</h1>
+    <h2 id="loginPageTitle">تسجيل الدخول</h2>
+
+    <!-- تم ربط الفورم بدالة الفحص والتحقق الذكي handleLogin -->
+    <form class="login-form" onsubmit="event.preventDefault(); handleLogin();">
+        <div class="form-group">
+            <label id="emailLabel">البريد الإلكتروني</label>
+            <input type="email" id="loginEmail" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label id="passLabel">كلمة المرور</label>
+            <input type="password" id="loginPassword" placeholder="أدخل كلمة المرور" required>
+        </div>
+
+        <button type="submit" id="loginBtn">تسجيل الدخول</button>
+    </form>
+
+    <p id="registerText">
+        ليس لديك حساب؟ 
+        <a href="register.html">إنشاء حساب جديد</a>
+    </p>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
